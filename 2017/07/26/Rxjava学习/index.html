@@ -384,6 +384,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Kommentare: </span>
+                <a href="/2017/07/26/Rxjava学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/07/26/Rxjava学习/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -797,17 +810,19 @@
     <!-- LOCAL: You can save these files to your site and update links -->
 
   
-<script src="https://wzxjayce.github.io/gitment.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+
 <link rel="stylesheet" href="https://wzxjayce.github.io/gitment.css">
 <!-- END LOCAL -->
 
 <script>
   function renderGitment() {
-    var gitment = new Gitment({
+    var gitment = new Gitmint({
       id: decodeURI(window.location.pathname),
       owner: 'jobwq',
       repo: 'comment',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
       
       oauth: {
       

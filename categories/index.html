@@ -616,17 +616,19 @@
     <!-- LOCAL: You can save these files to your site and update links -->
 
   
-<script src="https://wzxjayce.github.io/gitment.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+
 <link rel="stylesheet" href="https://wzxjayce.github.io/gitment.css">
 <!-- END LOCAL -->
 
 <script>
   function renderGitment() {
-    var gitment = new Gitment({
+    var gitment = new Gitmint({
       id: decodeURI(window.location.pathname),
       owner: 'jobwq',
       repo: 'comment',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
       
       oauth: {
       
